@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class sample3_1 {
     public static void main(String[] args) {
@@ -82,5 +83,17 @@ public class sample3_1 {
         String[] data = {"304","934","293"};
         ArrayList<String> pit = new ArrayList<>(Arrays.asList(data));
         System.out.println(pit);
+
+        ArrayList<String> pit1 = new ArrayList<>(Arrays.asList("45","42","75"));
+        System.out.println(pit1);
+
+        ArrayList<String> pit2 = new ArrayList<>(Arrays.asList("45","42","75"));
+        String use  = String.join(",",pit2);
+        System.out.println(use);
+
+        ArrayList<String> pit3 = new ArrayList<>(Arrays.asList("45","42","75"));
+        pit3.sort(Comparator.naturalOrder());
+        System.out.println(pit3);
+
     }
 }
